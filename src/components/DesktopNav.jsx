@@ -10,13 +10,13 @@ const DesktopNav = () => {
       spacing={4}
       align="center"
       fontWeight="semibold"
-      color={colorMode === "dark" && "gray.300"}
+      color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
     >
       <Link>Profile</Link>
       <Link>Skills</Link>
       <Link>Project</Link>
       <Link>Education</Link>
-      <Link>Contact Me</Link>
+      <Link>Contact</Link>
       <IconButton
         icon={
           colorMode === "light" ? (
@@ -26,8 +26,8 @@ const DesktopNav = () => {
           )
         }
         variant="ghost"
+        color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
         onClick={toggleColorMode}
-        color={colorMode === "dark" && "gray.300"}
       />
     </Stack>
   );

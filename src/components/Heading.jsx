@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Stack,
   Text,
   HStack,
-  Spacer,
   Button,
   useColorMode,
 } from "@chakra-ui/react";
@@ -13,8 +12,25 @@ import Account from "./Account";
 
 const Heading = () => {
   const { colorMode } = useColorMode();
+
+  const text = "Web Developer";
+  const [currentText, setCurrentText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const typing = setInterval(() => {
+      if (index === text.length) {
+        clearInterval(typing);
+        return;
+      }
+      setCurrentText(text.slice(0, index + 1));
+      setIndex(index + 1);
+    }, 100);
+    return () => clearInterval(typing);
+  }, [index]);
+
   return (
-    <Box>
+    <Box transition="all 0.2s ease-in-out">
       <Stack textAlign="left" lineHeight="shorter">
         <Text
           as="p"
@@ -27,11 +43,14 @@ const Heading = () => {
         </Text>
         <Text
           as="h1"
-          fontSize="5xl"
-          fontWeight="bold"
-          letterSpacing="wider"
-          lineHeight="shorter"
+          fontSize={{ base: "5xl", lg: "6xl" }}
           color={colorMode === "dark" ? "teal.400" : "blackAlpha.800"}
+          sx={{
+            fontWeight: "bold",
+            letterSpacing: "wider",
+            lineHeight: "shorter",
+            textShadow: "5px 1px 4px rgba(0,0,0,0.14)",
+          }}
         >
           <Text as="span">NEIL EDWARD</Text>
           <br />
@@ -43,7 +62,7 @@ const Heading = () => {
           fontWeight="semibold"
           color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
         >
-          Web Developer
+          {currentText}
         </Text>
       </Stack>
 
@@ -51,14 +70,18 @@ const Heading = () => {
         <Button
           as="a"
           size="lg"
-          boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
           color={colorMode === "light" && "white"}
           bgColor={colorMode === "dark" ? "blue.500" : "blue.600"}
-          _hover={{ bgColor: "blue.400" }}
-          sx={{ cursor: "pointer" }}
+          _hover={{ bgColor: "blue.400", transform: "scale(1.1)" }}
+          sx={{
+            cursor: "pointer",
+            transition: "all 0.2s ease-in-out",
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+          }}
         >
           View Projects
         </Button>
+
         <HStack mt={6} ps={4}>
           <Account link="https://github.com/neildc14">
             <Github
