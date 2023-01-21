@@ -11,7 +11,7 @@ const Avatar = () => {
           objectFit="contain"
           height={{ base: "200px", md: "100%" }}
           maxHeight="400px"
-          _hover={{ transform: "scale(1.1)" }}
+          _hover={{ transform: "scale(1.05)" }}
           sx={{ transition: "all 0.2s ease-in-out" }}
         />
       </Center>

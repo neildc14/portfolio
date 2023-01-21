@@ -1,9 +1,11 @@
 import React from "react";
 import { Stack, Link, IconButton, useColorMode } from "@chakra-ui/react";
 import { DarkModeIcon, LightModeIcon } from "../utils/SVGIcons";
+import { CustomNavLink } from "./CustomLink";
 
 const DesktopNav = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Stack
       direction="row"
@@ -12,11 +14,12 @@ const DesktopNav = () => {
       fontWeight="semibold"
       color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
     >
-      <Link>Profile</Link>
-      <Link>Skills</Link>
-      <Link>Project</Link>
-      <Link>Education</Link>
-      <Link>Contact</Link>
+      <CustomNavLink link="Profile" />
+      <CustomNavLink link="Skills" />
+      <CustomNavLink link="Projects" />
+      <CustomNavLink link="Education" />
+      <CustomNavLink link="Contact" />
+
       <IconButton
         icon={
           colorMode === "light" ? (
@@ -27,6 +30,7 @@ const DesktopNav = () => {
         }
         variant="ghost"
         color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
+        _hover={{ bgColor: colorMode === "dark" ? "teal.400" : "teal.200" }}
         onClick={toggleColorMode}
       />
     </Stack>

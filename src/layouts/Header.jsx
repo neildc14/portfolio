@@ -19,7 +19,12 @@ const Header = () => {
     <Box bgColor={colorMode === "dark" ? "#1a202c" : "blue.100"}>
       <Box as="header" maxW="5xl" mx="auto" height={16} py={4} px={6}>
         <Box display="flex" alignItems="center" justifyContent="space-between">
-          <Link href="/" display="flex" alignItems="cente">
+          <Link
+            href="/"
+            display="flex"
+            alignItems="cente"
+            _hover={{ textDecoration: "none" }}
+          >
             <Image src={logo} alt="this is a logo of the website" />
             {isMediumSize && (
               <Text
