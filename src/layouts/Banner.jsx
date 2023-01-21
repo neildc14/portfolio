@@ -17,9 +17,9 @@ const Banner = () => {
       bgColor={colorMode === "dark" ? "#1a202c" : "blue.100"}
     >
       <Box
-        height="90vh"
+        height={{ base: "85vh", md: "80vh" }}
         px={6}
-        maxW="1260px"
+        maxW="5xl"
         mx="auto"
         display="flex"
         flexDirection="column"
