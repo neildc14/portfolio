@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Link,
-  Image,
-  IconButton,
-  Spacer,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Box, Link, Image, IconButton, useColorMode } from "@chakra-ui/react";
 import logo from "../assets/icons/logo.png";
 import createNewIcon from "../utils/createIcon";
 

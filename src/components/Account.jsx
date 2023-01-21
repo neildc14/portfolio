@@ -1,7 +1,8 @@
 import React from "react";
-import { IconButton } from "@chakra-ui/react";
+import { IconButton, useColorMode } from "@chakra-ui/react";
 
 const Account = ({ link, children }) => {
+  const { colorMode } = useColorMode();
   return (
     <IconButton
       as="a"
@@ -10,7 +11,10 @@ const Account = ({ link, children }) => {
       size="lg"
       variant="solid"
       borderRadius="full"
-      bgColor="gray.700"
+      boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+      bgColor={colorMode === "dark" ? "gray.500" : "gray.300"}
+      _hover={{ bgColor: "blue.400" }}
+      _active={{ bgColor: "blue.400" }}
     />
   );
 };
