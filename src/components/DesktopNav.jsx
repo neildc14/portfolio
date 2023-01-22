@@ -9,16 +9,17 @@ const DesktopNav = () => {
   return (
     <Stack
       direction="row"
-      spacing={4}
+      spacing={{ md: 2, lg: 4 }}
       align="center"
       fontWeight="semibold"
       color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
     >
-      <CustomNavLink link="Profile" />
-      <CustomNavLink link="Skills" />
-      <CustomNavLink link="Projects" />
-      <CustomNavLink link="Education" />
-      <CustomNavLink link="Contact" />
+      <CustomNavLink link="Profile" path="#profile" />
+      <CustomNavLink link="About" path="#about" />
+      <CustomNavLink link="Skills" path="#skills" />
+      <CustomNavLink link="Projects" path="#projects" />
+      <CustomNavLink link="Education" path="#education" />
+      <CustomNavLink link="Contact" path="#contact" />
 
       <IconButton
         icon={

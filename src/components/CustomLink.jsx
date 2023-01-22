@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, useColorMode } from "@chakra-ui/react";
 
-export const CustomNavLink = ({ link, px = 2, py = 0 }) => {
+export const CustomNavLink = ({ link, path, px = 2, py = 0 }) => {
   const { colorMode } = useColorMode();
   return (
     <Link
+      href={path}
       width="100%"
       px={px}
       py={py}

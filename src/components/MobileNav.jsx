@@ -61,6 +61,7 @@ const MobileNav = () => {
             width="100%"
           >
             <CustomNavLink link="Profile" py={2} />
+            <CustomNavLink link="About" py={2} />
             <CustomNavLink link="Skills" py={2} />
             <CustomNavLink link="Projects" py={2} />
             <CustomNavLink link="Education" py={2} />

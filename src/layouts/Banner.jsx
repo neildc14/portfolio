@@ -8,6 +8,7 @@ const Banner = () => {
 
   return (
     <Box
+      id="profile"
       width="100%"
       mx="auto"
       borderRadius={{
