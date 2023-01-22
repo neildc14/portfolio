@@ -56,8 +56,6 @@ const Skills = () => {
         <ToolCard type="Github" img={github} />
         <ToolCard type="Figma" img={figma} />
       </SkillCard>
-
-      <Box pb={20}></Box>
     </Section>
   );
 };
