@@ -15,7 +15,13 @@ const ToolCard = ({ type, img }) => {
       bgColor={colorMode === "light" && "blue.100"}
       boxShadow="-5px 0px 36px -11px rgba(0,0,0,0.1"
     >
-      <Image src={img} boxSize={{ base: 20 }} width={{ lg: "70%" }} />
+      <Image
+        src={img}
+        boxSize={{ base: 20 }}
+        width={{ lg: "70%" }}
+        _hover={{ transform: "scale(2)" }}
+        transition="all .5s ease-in-out"
+      />
       <Heading
         as="h2"
         size="sm"

@@ -3,7 +3,7 @@ import React from "react";
 
 const Section = ({ id, children }) => {
   return (
-    <Box as="section" id={id} mt={16} px={6} maxW="5xl" mx="auto">
+    <Box as="section" id={id} pt={16} px={6} maxW="5xl" mx="auto">
       {children}
     </Box>
   );

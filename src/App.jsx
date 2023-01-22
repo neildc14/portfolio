@@ -12,11 +12,14 @@ function App() {
         maxW="full"
         height="100%"
         px={0}
+        pb={16}
         bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.50"}
       >
         <Header />
         <Banner />
         <About />
+      </Container>
+      <Container maxW="full" px={0} pb={16}>
         <Skills />
       </Container>
     </div>

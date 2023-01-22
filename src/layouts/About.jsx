@@ -26,8 +26,8 @@ const About = () => {
           placeItems="center"
           borderRadius="md"
           color="gray.300"
-          boxShadow="0px 10px 35px -3px rgba(0,0,0,0.1);"
-          bgColor={colorMode === "dark" ? "#1a202c" : "blue.100"}
+          boxShadow="-5px 0px 36px -11px rgba(0,0,0,0.1)"
+          bgColor={colorMode === "dark" ? "#1a202c" : "blue.200"}
         >
           <AboutText
             text=" I am a full-stack web developer who is enthusiastic about designing
