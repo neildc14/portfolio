@@ -17,6 +17,7 @@ function App() {
         <Header />
         <Banner />
         <About />
+        <Skills />
       </Container>
     </div>
   );
