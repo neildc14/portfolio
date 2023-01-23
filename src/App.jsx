@@ -1,8 +1,9 @@
 import Header from "./layouts/Header";
-import { Container, Box, useColorMode } from "@chakra-ui/react";
+import { Container, useColorMode } from "@chakra-ui/react";
 import Banner from "./layouts/Banner";
 import About from "./layouts/About";
 import Skills from "./layouts/Skills";
+import Projects from "./layouts/Projects";
 
 function App() {
   const { colorMode } = useColorMode();
@@ -20,7 +21,15 @@ function App() {
         <About />
       </Container>
       <Container maxW="full" px={0} pb={16}>
-        <Skills />
+        {/* <Skills /> */}
+      </Container>
+      <Container
+        maxW="full"
+        px={0}
+        pb={16}
+        bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.200"}
+      >
+        <Projects />
       </Container>
     </div>
   );

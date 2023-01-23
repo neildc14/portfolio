@@ -69,6 +69,7 @@ const Heading = () => {
       <HStack mt={10}>
         <Button
           as="a"
+          href="#projects"
           size="lg"
           color={colorMode === "light" && "white"}
           bgColor={colorMode === "dark" ? "blue.500" : "blue.600"}
