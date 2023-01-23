@@ -32,7 +32,7 @@ const Header = () => {
                 fontSize="lg"
                 color={colorMode === "dark" && "gray.300"}
               >
-                @neildelacruz
+                _neildelacruz
               </Text>
             )}
           </Link>

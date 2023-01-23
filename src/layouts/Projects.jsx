@@ -27,6 +27,7 @@ const Projects = () => {
           explanation="This web app offers a simple solution to shorten long and complex URLs, making them more manageable and shareable."
           tools={["MongoDB", "Express", "React", "NodeJS", "Charka UI"]}
           link="https://shrinky.netlify.app"
+          github="https://github.com/neildc14/shrinky"
         />
         <ProjectCard
           image={isquizzy}
