@@ -18,7 +18,6 @@ const DesktopNav = () => {
       <CustomNavLink link="About" path="#about" />
       <CustomNavLink link="Skills" path="#skills" />
       <CustomNavLink link="Projects" path="#projects" />
-      <CustomNavLink link="Education" path="#education" />
       <CustomNavLink link="Contact" path="#contact" />
 
       <IconButton
