@@ -21,7 +21,7 @@ function App() {
         <About />
       </Container>
       <Container maxW="full" px={0} pb={16}>
-        {/* <Skills /> */}
+        <Skills />
       </Container>
       <Container
         maxW="full"

@@ -7,7 +7,7 @@ const ToolCard = ({ type, img }) => {
     <Card
       size="sm"
       maxW={40}
-      width={{ base: "90%", md: "100%" }}
+      width="90%"
       variant="filled"
       display="grid"
       placeItems="center"
@@ -17,8 +17,8 @@ const ToolCard = ({ type, img }) => {
     >
       <Image
         src={img}
-        boxSize={{ base: 20 }}
-        width={{ lg: "70%" }}
+        height={{ base: 12, lg: 12 }}
+        width={{ lg: "50%" }}
         _hover={{ transform: "scale(2)" }}
         transition="all .5s ease-in-out"
       />

@@ -52,7 +52,7 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
       mouseOver(image, card);
       mouseLeave(image, card);
     }
-  }, [boxRef, imageRef]);
+  });
 
   return (
     <Box
