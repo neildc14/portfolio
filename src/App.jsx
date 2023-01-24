@@ -4,6 +4,7 @@ import Banner from "./layouts/Banner";
 import About from "./layouts/About";
 import Skills from "./layouts/Skills";
 import Projects from "./layouts/Projects";
+import Contact from "./layouts/Contact";
 
 function App() {
   const { colorMode } = useColorMode();
@@ -30,6 +31,14 @@ function App() {
         bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.200"}
       >
         <Projects />
+      </Container>
+      <Container
+        maxW="full"
+        px={0}
+        pb={16}
+        bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.600"}
+      >
+        <Contact />
       </Container>
     </div>
   );
