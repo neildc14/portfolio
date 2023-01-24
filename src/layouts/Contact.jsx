@@ -48,45 +48,46 @@ const Contact = () => {
             </Heading>
           </CardHeader>
 
-          <CardBody
-            as="form"
-            action="https://formsubmit.co/neiledwarddelacruz1999@gmail.com"
-            method="POST"
-          >
-            <FormControl pb={4}>
-              <FormLabel>Email:</FormLabel>
-              <Input
-                type="email"
-                name="email"
-                aria-label="Input your email address"
-                required
-                {...mailBind}
-              />
-            </FormControl>
-
-            <FormControl>
-              <FormLabel>Message:</FormLabel>
-              <Textarea
-                id="textarea"
-                name="message"
-                height={40}
-                aria-label="Input message you want to send"
-                {...messageBind}
-              ></Textarea>
-            </FormControl>
-
-            <Button
-              type="submit"
-              size="md"
-              mt={6}
-              bgColor="blue.500"
-              color="white"
-              _hover={{ bgColor: "blue.300" }}
-              aria-label="Click to send email"
-              rightIcon={<EmailIcon />}
+          <CardBody>
+            <Box
+              action="https://formsubmit.co/neiledwarddelacruz1999@gmail.com"
+              method="POST"
             >
-              Send email
-            </Button>
+              <FormControl pb={4}>
+                <FormLabel>Email:</FormLabel>
+                <Input
+                  type="email"
+                  name="email"
+                  aria-label="Input your email address"
+                  required
+                  {...mailBind}
+                />
+              </FormControl>
+
+              <FormControl>
+                <FormLabel>Message:</FormLabel>
+                <Textarea
+                  id="textarea"
+                  name="message"
+                  height={40}
+                  aria-label="Input message you want to send"
+                  {...messageBind}
+                ></Textarea>
+              </FormControl>
+
+              <Button
+                type="submit"
+                size="md"
+                mt={6}
+                bgColor="blue.500"
+                color="white"
+                _hover={{ bgColor: "blue.300" }}
+                aria-label="Click to send email"
+                rightIcon={<EmailIcon />}
+              >
+                Send email
+              </Button>
+            </Box>
           </CardBody>
         </Card>
       </Box>

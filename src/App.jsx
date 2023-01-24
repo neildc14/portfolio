@@ -9,6 +9,7 @@ import Footer from "./layouts/Footer";
 
 function App() {
   const { colorMode } = useColorMode();
+
   return (
     <div className="App">
       <Container
