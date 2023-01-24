@@ -12,13 +12,23 @@ function App() {
   return (
     <div className="App">
       <Container
+        position="sticky"
+        top={-1}
+        zIndex={100000}
+        maxW="full"
+        height="100%"
+        px={0}
+        bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.50"}
+      >
+        <Header />
+      </Container>
+      <Container
         maxW="full"
         height="100%"
         px={0}
         pb={16}
         bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.50"}
       >
-        <Header />
         <Banner />
         <About />
       </Container>
