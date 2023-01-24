@@ -19,16 +19,18 @@ const Avatar = () => {
           sx={{ transition: "all 0.2s ease-in-out" }}
         />
       </Center>
-      <Center mt={6}>
+      {/* <Center mt={6}>
         <Button
           size="md"
           variant="outline"
           rightIcon={<DownloadIcon />}
           bgColor={"none"}
+          borderWidth="1  px"
+          borderColor="teal.300"
         >
           Download CV
         </Button>
-      </Center>
+      </Center> */}
     </Box>
   );
 };

@@ -108,7 +108,7 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
           >
             Visit site
           </Button>
-          <Account link={github} size="sm">
+          <Account label="github" link={github} size="sm">
             <Github
               boxSize={6}
               color={colorMode === "light" && "blackAlpha.800"}

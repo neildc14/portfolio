@@ -28,7 +28,7 @@ const Contact = () => {
   const [message, messageBind] = useInput();
 
   return (
-    <Section>
+    <Section id="contact">
       <CustomeDivider />
       <CustomHeading heading="Contact" />
 
@@ -38,8 +38,6 @@ const Contact = () => {
         flexDirection={{ base: "column", lg: "row" }}
         justifyContent="space-between"
         alignItems="center"
-        borderRadius="lg"
-        boxShadow="inset 0px -69px 50px -26px rgba(0,0,0,0.1)"
       >
         {isDesktopSize && <Image src={email} width="100%" maxW="lg" />}
 
@@ -83,7 +81,7 @@ const Contact = () => {
               mt={6}
               bgColor="blue.500"
               color="white"
-              _hover={{ bgColor: colorMode === "light" && "blue.300" }}
+              _hover={{ bgColor: "blue.300" }}
               aria-label="Click to send email"
               rightIcon={<EmailIcon />}
             >

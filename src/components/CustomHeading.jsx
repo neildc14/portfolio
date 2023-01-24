@@ -1,7 +1,7 @@
 import { Heading, useColorMode } from "@chakra-ui/react";
 import React from "react";
 
-const CustomHeading = ({ heading }) => {
+const CustomHeading = ({ heading, color = "blacAlpha.800" }) => {
   const { colorMode } = useColorMode();
   return (
     <Heading
@@ -9,7 +9,7 @@ const CustomHeading = ({ heading }) => {
       size="xl"
       mb={2}
       fontWeight="semibold"
-      color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
+      color={colorMode === "dark" ? "gray.300" : color}
     >
       {heading}
     </Heading>

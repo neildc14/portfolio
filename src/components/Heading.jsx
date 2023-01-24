@@ -6,9 +6,12 @@ import {
   HStack,
   Button,
   useColorMode,
+  Center,
+  Tooltip,
 } from "@chakra-ui/react";
 import { Github, LinkedIn, Facebook } from "../utils/SVGIcons";
 import Account from "./Account";
+import { DownloadIcon } from "@chakra-ui/icons";
 
 const Heading = () => {
   const { colorMode } = useColorMode();
@@ -84,19 +87,26 @@ const Heading = () => {
         </Button>
 
         <HStack mt={6} ps={4}>
-          <Account link="https://github.com/neildc14">
+          <Account label="github" link="https://github.com/neildc14">
             <Github
               boxSize={6}
               color={colorMode === "light" && "blackAlpha.800"}
             />
           </Account>
-          <Account link="https://www.linkedin.com/in/neil-dela-cruz-046440206/">
+
+          <Account
+            label="linkedIn"
+            link="https://www.linkedin.com/in/neil-dela-cruz-046440206/"
+          >
             <LinkedIn
               boxSize={6}
               color={colorMode === "light" && "blackAlpha.800"}
             />
           </Account>
-          <Account link="https://www.facebook.com/neiledwarddelacruz14">
+          <Account
+            label="facebook"
+            link="https://www.facebook.com/neiledwarddelacruz14"
+          >
             <Facebook
               boxSize={6}
               color={colorMode === "light" && "blackAlpha.800"}
@@ -104,6 +114,18 @@ const Heading = () => {
           </Account>
         </HStack>
       </HStack>
+      <Box mt={6}>
+        <Button
+          size="sm"
+          variant="outline"
+          rightIcon={<DownloadIcon />}
+          bgColor={"none"}
+          borderWidth="1px"
+          borderColor={colorMode === "dark" ? "teal.600" : "teal.300"}
+        >
+          Download CV
+        </Button>
+      </Box>
     </Box>
   );
 };
