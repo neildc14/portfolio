@@ -20,7 +20,7 @@ const MobileNav = () => {
   const btnRef = React.useRef();
 
   return (
-    <Box>
+    <Box zIndex={2000000}>
       <IconButton
         icon={
           colorMode === "light" ? (
@@ -35,10 +35,11 @@ const MobileNav = () => {
       <IconButton
         icon={<HamburgerIcon boxSize={6} />}
         variant="ghost"
-        onClick={onOpen}
+        onClick={isOpen ? onClose : onOpen}
       />
 
       <Drawer
+        zIndex={2000000}
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
@@ -47,9 +48,6 @@ const MobileNav = () => {
       >
         <DrawerOverlay />
         <DrawerContent bgColor={colorMode === "light" && "blue.100"}>
-          <DrawerCloseButton />
-          <DrawerHeader>@neildelacruz</DrawerHeader>
-
           <DrawerBody
             display="flex"
             flexDirection="column"
@@ -60,11 +58,36 @@ const MobileNav = () => {
             fontWeight="semibold"
             width="100%"
           >
-            <CustomNavLink link="Profile" py={2} />
-            <CustomNavLink link="About" py={2} />
-            <CustomNavLink link="Skills" py={2} />
-            <CustomNavLink link="Projects" py={2} />
-            <CustomNavLink link="Contact" py={2} />
+            <CustomNavLink
+              link="Profile"
+              path="#profile"
+              py={2}
+              onClick={onClose}
+            />
+            <CustomNavLink
+              link="About"
+              path="#about"
+              py={2}
+              onClick={onClose}
+            />
+            <CustomNavLink
+              link="Skills"
+              path="#skills"
+              py={2}
+              onClick={onClose}
+            />
+            <CustomNavLink
+              link="Projects"
+              path="#projects"
+              py={2}
+              onClick={onClose}
+            />
+            <CustomNavLink
+              link="Contact"
+              path="#contact"
+              py={2}
+              onClick={onClose}
+            />
           </DrawerBody>
         </DrawerContent>
       </Drawer>
