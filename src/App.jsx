@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./layouts/Header";
 import { Container, useColorMode } from "@chakra-ui/react";
 import Banner from "./layouts/Banner";
@@ -6,9 +7,15 @@ import Skills from "./layouts/Skills";
 import Projects from "./layouts/Projects";
 import Contact from "./layouts/Contact";
 import Footer from "./layouts/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const { colorMode } = useColorMode();
+
+  React.useEffect(() => {
+    AOS.init();
+  });
 
   return (
     <div className="App">

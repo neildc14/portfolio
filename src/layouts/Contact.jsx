@@ -39,9 +39,18 @@ const Contact = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        {isDesktopSize && <Image src={email} width="100%" maxW="lg" />}
+        {isDesktopSize && (
+          <div data-aos="flip-up">
+            <Image src={email} width="100%" maxW="lg" />{" "}
+          </div>
+        )}
 
-        <Card as="form" maxW={{ base: "lg", md: "sm" }} width="100%">
+        <Card
+          as="form"
+          maxW={{ base: "lg", md: "sm" }}
+          width="100%"
+          data-aos="flip-down"
+        >
           <CardHeader>
             <Heading as="h3" size="md" fontWeight="semibold">
               Send me a message..

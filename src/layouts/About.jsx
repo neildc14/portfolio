@@ -17,31 +17,34 @@ const About = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Image src={aboutme} width="100%" maxW="sm" />
-
-        <Box
-          maxW="3xl"
-          p={6}
-          display="grid"
-          placeItems="center"
-          borderRadius="md"
-          color="gray.300"
-          boxShadow="-5px 0px 36px -11px rgba(0,0,0,0.1)"
-          bgColor={colorMode === "dark" ? "#1a202c" : "blue.200"}
-        >
-          <AboutText
-            text=" I am a full-stack web developer who is enthusiastic about designing
+        <div data-aos="flip-left">
+          <Image src={aboutme} width="100%" maxW="sm" />
+        </div>
+        <div data-aos="flip-right">
+          <Box
+            maxW="3xl"
+            p={6}
+            display="grid"
+            placeItems="center"
+            borderRadius="md"
+            color="gray.300"
+            boxShadow="-5px 0px 36px -11px rgba(0,0,0,0.1)"
+            bgColor={colorMode === "dark" ? "#1a202c" : "blue.200"}
+          >
+            <AboutText
+              text=" I am a full-stack web developer who is enthusiastic about designing
             interactive and captivating user experiences. I am dedicated to
             creating dynamic and engaging user experiences through my web
             development skills."
-          />
-          <AboutText
-            text=" I am currently a fourth-year graduating student of Bachelor of
+            />
+            <AboutText
+              text=" I am currently a fourth-year graduating student of Bachelor of
             Science in Information Technology (BSIT). I am in the final stages
             of my studies and am preparing to enter the workforce as an intern
             web developer."
-          />
-        </Box>
+            />
+          </Box>
+        </div>
       </Box>
     </Section>
   );
