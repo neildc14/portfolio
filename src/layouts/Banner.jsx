@@ -11,7 +11,7 @@ const Banner = () => {
     setInterval(() => {
       setAnimation("flip-left");
       setLoading(false);
-    }, 100);
+    }, 500);
   }, []);
 
   return (
@@ -51,4 +51,3 @@ const Banner = () => {
 };
 
 export default Banner;
- 
