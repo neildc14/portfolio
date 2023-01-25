@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, useColorMode } from "@chakra-ui/react";
 import Avatar from "../components/Avatar";
 import Heading from "../components/Heading";
 
 const Banner = () => {
   const { colorMode } = useColorMode();
+  const [animate, setAnimation] = useState("");
+  const [isLoading, setLoading] = useState(true);
+  useEffect(() => {
+    setInterval(() => {
+      setAnimation("flip-left");
+      setLoading(false);
+    }, 100);
+  }, []);
 
   return (
     <Box
@@ -29,8 +37,14 @@ const Banner = () => {
         alignItems={{ md: "center" }}
         gap={12}
       >
-        <Avatar />
-        <Heading />
+        {!isLoading && (
+          <>
+            <div data-aos={animate}>
+              <Avatar />
+            </div>
+            <Heading />
+          </>
+        )}
       </Box>
     </Box>
   );

@@ -62,7 +62,7 @@ function App() {
         px={0}
         pb={16}
         bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.200"}
-        boxShadow="inset 0px -69px 50px -26px rgba(0,0,0,0.1)"
+        boxShadow="inset 0px -80px 100px -4px rgba(0,0,0,0.1)"
       >
         <Projects />
       </Container>
@@ -71,7 +71,7 @@ function App() {
         px={0}
         pb={16}
         bgColor={colorMode === "dark" ? "blackAlpha.400" : "gray.50"}
-        boxShadow="inset 0px -69px 50px -26px rgba(0,0,0,0.1)"
+        boxShadow="inset 0px -80px 100px -4px rgba(0,0,0,0.1)"
       >
         <Contact />
       </Container>

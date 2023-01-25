@@ -53,7 +53,7 @@ const Services = () => {
                 <ServiceCard
                   img={frontend}
                   heading="Frontend Development"
-                  intro="I am proficient in utilizing HTML, CSS, UI frameworks, and JavaScript frameworks, particularly ReactJS, to create front-end for web-app and websites."
+                  intro="I am proficient in utilizing HTML, CSS, UI frameworks, and JavaScript library especially ReactJS, to create front-end for websites."
                 />
               </div>
               <div data-aos="flip-left" style={{ flex: 1 }}>
