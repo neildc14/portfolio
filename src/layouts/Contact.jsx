@@ -59,7 +59,7 @@ const Contact = () => {
 
           <CardBody>
             <form
-              action="https://formsubmit.co/neiledwarddelacruz1999@gmail.com"
+              action="https://formsubmit.co/0b0b2cc2b07727d0fda5b0f785573caa"
               method="POST"
             >
               <FormControl pb={4}>
