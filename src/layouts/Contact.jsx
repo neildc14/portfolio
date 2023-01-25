@@ -46,7 +46,6 @@ const Contact = () => {
         )}
 
         <Card
-          as="form"
           maxW={{ base: "lg", md: "sm" }}
           width="100%"
           data-aos="flip-down"
