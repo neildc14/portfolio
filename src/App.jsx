@@ -53,7 +53,7 @@ function App() {
         height={{ base: "100vh", md: "40vh" }}
         maxW="full"
         px={0}
-        mb={16}
+        mb={32}
       >
         <Services />
       </Container>

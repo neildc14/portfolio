@@ -46,24 +46,24 @@ const Services = () => {
             <CardBody
               display="flex"
               flexDirection={{ base: "column", md: "row" }}
-              justifyContent="space-evenly"
+              justifyContent="space-between"
               gap={10}
             >
-              <div data-aos="flip-left">
+              <div data-aos="flip-left" style={{ flex: 1 }}>
                 <ServiceCard
                   img={frontend}
                   heading="Frontend Development"
-                  intro="I am proficient in using HTML, CSS, UI frameworks, and JavaScript frameworks, particularly ReactJS, to develop the front-end for websites and web-app"
+                  intro="I am proficient in utilizing HTML, CSS, UI frameworks, and JavaScript frameworks, particularly ReactJS, to create front-end for web-app and websites."
                 />
               </div>
-              <div data-aos="flip-left">
+              <div data-aos="flip-left" style={{ flex: 1 }}>
                 <ServiceCard
                   img={backend}
                   heading="Backend Development"
-                  intro="I Skilled in using NodeJS, Express, MongodDB to provide high-quality backend development services."
+                  intro="I am Skilled in using NodeJS, Express, MongodDB to provide high-quality backend development services."
                 />
               </div>
-              <div data-aos="flip-left">
+              <div data-aos="flip-left" style={{ flex: 1 }}>
                 <ServiceCard
                   img={web_design}
                   heading="Web Design"
