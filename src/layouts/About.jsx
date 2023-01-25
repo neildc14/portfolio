@@ -17,10 +17,10 @@ const About = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <div data-aos="flip-left">
+        <div data-aos="flip-left" style={{ overflowX: "hidden !important" }}>
           <Image src={aboutme} width="100%" maxW="sm" />
         </div>
-        <div data-aos="flip-right">
+        <div data-aos="flip-right" style={{ overflowX: "hidden !important" }}>
           <Box
             maxW="3xl"
             p={6}

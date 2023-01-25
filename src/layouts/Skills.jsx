@@ -35,8 +35,7 @@ const Skills = () => {
       >
         I am particularly skilled in utilizing these technologies:
       </Text>
-
-      <div data-aos="zoom-out-down">
+      <div data-aos="zoom-in-up">
         <SkillCard heading="Frontend Development">
           <ToolCard type="HTML" img={html} />
           <ToolCard type="CSS" img={css} />
@@ -47,7 +46,7 @@ const Skills = () => {
           <ToolCard type="Bootstrap" img={bootstrap} />
         </SkillCard>
       </div>
-      <div data-aos="zoom-out-down">
+      <div data-aos="zoom-in-up">
         <SkillCard heading="Backend Development">
           <ToolCard type="Node JS" img={node} />
           <ToolCard type="Express" img={express} />
@@ -55,7 +54,7 @@ const Skills = () => {
           <ToolCard type="My SQL" img={mysql} />
         </SkillCard>
       </div>
-      <div data-aos="zoom-out-down">
+      <div data-aos="zoom-in-up">
         <SkillCard heading="Others">
           <ToolCard type="Git" img={git} />
           <ToolCard type="Github" img={github} />
