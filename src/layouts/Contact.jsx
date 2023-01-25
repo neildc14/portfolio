@@ -58,7 +58,7 @@ const Contact = () => {
           </CardHeader>
 
           <CardBody>
-            <Box
+            <form
               action="https://formsubmit.co/neiledwarddelacruz1999@gmail.com"
               method="POST"
             >
@@ -96,7 +96,7 @@ const Contact = () => {
               >
                 Send email
               </Button>
-            </Box>
+            </form>
           </CardBody>
         </Card>
       </Box>
