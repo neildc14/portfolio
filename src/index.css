@@ -4,7 +4,14 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   transition: all 0.4s ease-in-out !important;
+}
+
+html {
   scroll-behavior: smooth !important;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .progress-bar {

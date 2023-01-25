@@ -9,6 +9,7 @@ import Contact from "./layouts/Contact";
 import Footer from "./layouts/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Services from "./layouts/Services";
 
 function App() {
   const { colorMode } = useColorMode();
@@ -43,10 +44,18 @@ function App() {
       <Container
         maxW="full"
         px={0}
-        pb={16}
-        boxShadow="inset 0px -69px 50px -26px rgba(0,0,0,0.1)"
+        pb={{ base: 32, md: 48 }} //changed for overflow
+        boxShadow="inset 0px -80px 100px -4px rgba(0,0,0,0.1)"
       >
         <Skills />
+      </Container>
+      <Container
+        height={{ base: "100vh", md: "40vh" }}
+        maxW="full"
+        px={0}
+        mb={16}
+      >
+        <Services />
       </Container>
       <Container
         maxW="full"
