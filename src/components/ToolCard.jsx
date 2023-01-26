@@ -8,12 +8,14 @@ const ToolCard = ({ type, img }) => {
       size="sm"
       maxW={40}
       width="90%"
-      variant="filled"
+      variant="outline" //
       display="grid"
       placeItems="center"
-      py={4}
-      bgColor={colorMode === "light" && "blue.100"}
-      boxShadow="-5px 0px 36px -11px rgba(0,0,0,0.1"
+      pt={4} //py
+      // bgColor={colorMode === "light" && "blue.100"}
+      // boxShadow="-5px 0px 36px -11px rgba(0,0,0,0.1"
+      bgColor="none" //
+      borderColor={colorMode === "light" && "blue.800"} //
     >
       <Image
         src={img}
@@ -26,7 +28,9 @@ const ToolCard = ({ type, img }) => {
         as="h2"
         size="sm"
         py={2}
-        color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
+        mt={2}
+        textAlign="center"
+        color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"} //blackAlpha.800 lightMode
       >
         {type}
       </Heading>

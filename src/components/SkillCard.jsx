@@ -15,10 +15,18 @@ const SkillCard = ({ children, heading }) => {
       variant="outline"
       mt={10}
       p={{ base: 4, md: 6 }}
-      bgColor={colorMode === "light" && "blue.800"}
+      // bgColor={colorMode === "light" && "blue.800"}
+      bgColor="none " //
+      borderColor={colorMode === "light" && "blue.800"} //
     >
       <CardHeader p={0}>
-        <Heading as="h4" size="lg" fontWeight="regular" mb={2} color="blue.400">
+        <Heading
+          as="h4"
+          size="lg"
+          fontWeight="regular"
+          mb={2}
+          color={colorMode === "dark" ? "gray.300" : "blackAlpha.800"}
+        >
           {heading}
         </Heading>
         <Divider />

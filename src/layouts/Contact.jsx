@@ -48,7 +48,7 @@ const Contact = () => {
         <Card
           maxW={{ base: "lg", md: "sm" }}
           width="100%"
-          borderColor="gray.300"
+          borderColor={colorMode === "lght" && "gray.300"}
           borderWidth="1px"
           data-aos="flip-down"
         >
