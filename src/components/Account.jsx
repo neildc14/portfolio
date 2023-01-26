@@ -8,6 +8,7 @@ const Account = ({ label, link, size = "lg", children }) => {
       <IconButton
         as="a"
         href={link}
+        target="_blank"
         icon={children}
         size={size}
         variant="solid"

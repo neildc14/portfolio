@@ -100,6 +100,7 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
           <Button
             as="a"
             href={link}
+            target="_blank"
             size="sm"
             bgColor="gray.500"
             cursor="pointer"
