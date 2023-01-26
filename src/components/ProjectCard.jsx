@@ -24,7 +24,7 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    if (boxRef.current && isDesktopSize) {
+    if (boxRef.current && isDesktopSize && image) {
       const image = boxRef.current.querySelector(`#${imageRef.current.id}`);
       const card = boxRef.current.querySelector(`#${cardRef.current.id}`);
 
@@ -33,6 +33,8 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
         let scaledDown = toScaleDown;
 
         boxRef.current.addEventListener("mouseover", () => {
+          boxRef.current.style.boxShadow =
+            "inset 0px -80px 100px -4px rgba(0,0,0,0.1)";
           scaledUp.style.marginLeft = "2.5rem";
           scaledUp.style.transform = "scale(1.1)";
           scaledUp.style.transition = " all 0.2s ease-in-out";
@@ -42,6 +44,7 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
       }
       function mouseLeave(scaledUp, scaledDown) {
         boxRef.current.addEventListener("mouseleave", () => {
+          boxRef.current.style.boxShadow = "none";
           scaledUp.style.marginLeft = "0";
           scaledUp.style.transform = "scale(1)";
           scaledUp.style.transition = " all 0.2s ease-in-out";
@@ -63,10 +66,11 @@ const ProjectCard = ({ image, heading, explanation, tools, link, github }) => {
       justifyContent="space-between"
       gap={2}
     >
-      <AspectRatio ratio={16 / 9} width="100%">
-        <Image ref={imageRef} id={heading} src={image} alt="" width="100%" />
-      </AspectRatio>
-
+      {image && (
+        <AspectRatio ratio={16 / 9} width="100%">
+          <Image ref={imageRef} id={heading} src={image} alt="" width="100%" />
+        </AspectRatio>
+      )}
       <Card
         ref={cardRef}
         id={`card${heading}`}

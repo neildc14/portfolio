@@ -10,6 +10,7 @@ import Footer from "./layouts/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Services from "./layouts/Services";
+import NoteWothyProjects from "./layouts/NoteWothyProjects";
 
 function App() {
   const { colorMode } = useColorMode();
@@ -45,7 +46,11 @@ function App() {
         maxW="full"
         px={0}
         pb={{ base: 32, md: 48 }} //changed for overflow
-        boxShadow="inset 0px -80px 100px -4px rgba(0,0,0,0.1)"
+        // boxShadow="inset 0px -80px 100px -4px rgba(0,0,0,0.1)"
+        bgGradient={
+          colorMode === "light" &&
+          "linear(teal.50 0%, teal.100 25%, blue.200 50%)"
+        }
       >
         <Skills />
       </Container>
@@ -63,6 +68,10 @@ function App() {
         pb={16}
         bgColor={colorMode === "dark" ? "blackAlpha.400" : "blue.200"}
         boxShadow="inset 0px -80px 100px -4px rgba(0,0,0,0.1)"
+        bgGradient={
+          colorMode === "light" &&
+          "linear(blue.50 0%, blue.200 25%,  blue.400 100%)"
+        }
       >
         <Projects />
       </Container>
