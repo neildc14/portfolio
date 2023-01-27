@@ -117,7 +117,7 @@ const Heading = () => {
         <Button
           as="a"
           href={my_pdf}
-          targe="_blank"
+          target="_blank"
           size="sm"
           variant="outline"
           rightIcon={<DownloadIcon />}
