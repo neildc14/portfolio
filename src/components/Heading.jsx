@@ -6,12 +6,11 @@ import {
   HStack,
   Button,
   useColorMode,
-  Center,
-  Tooltip,
 } from "@chakra-ui/react";
 import { Github, LinkedIn, Facebook } from "../utils/SVGIcons";
 import Account from "./Account";
 import { DownloadIcon } from "@chakra-ui/icons";
+import my_pdf from "../assets/pdf/neiledward_dela_cruz_cv.pdf";
 
 const Heading = () => {
   const { colorMode } = useColorMode();
@@ -116,6 +115,9 @@ const Heading = () => {
       </HStack>
       <Box mt={6}>
         <Button
+          as="a"
+          href={my_pdf}
+          targe="_blank"
           size="sm"
           variant="outline"
           rightIcon={<DownloadIcon />}
