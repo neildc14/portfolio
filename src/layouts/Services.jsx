@@ -60,7 +60,7 @@ const Services = () => {
                 <ServiceCard
                   img={backend}
                   heading="Backend Development"
-                  intro="I am skilled in using NodeJS, Express, MongodDB to provide high-quality backend development services."
+                  intro="I am skilled in using NodeJS, Express, MongoDB to provide high-quality backend development services."
                 />
               </div>
               <div data-aos="flip-left" style={{ flex: 1 }}>

@@ -88,6 +88,7 @@ const Contact = () => {
               <Button
                 type="submit"
                 size="md"
+                width="100%"
                 mt={6}
                 bgColor="blue.500"
                 color="white"
