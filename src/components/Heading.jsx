@@ -10,7 +10,7 @@ import {
 import { Github, LinkedIn, Facebook } from "../utils/SVGIcons";
 import Account from "./Account";
 import { DownloadIcon } from "@chakra-ui/icons";
-import my_pdf from "../assets/pdf/neiledward_dela_cruz_cv.pdf"; //added
+import my_pdf from "../assets/pdf/neiledward_dela_cruz_cv1.pdf"; //added
 
 const Heading = () => {
   const { colorMode } = useColorMode();
