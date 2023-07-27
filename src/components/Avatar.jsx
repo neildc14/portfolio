@@ -4,7 +4,7 @@ import pfp1 from "../assets/images/pfp1.png";
 
 const Avatar = () => {
   return (
-    <Box paddingTop={{ base: 200, md: 0 }}>
+    <Box>
       <Center>
         <Image
           src={pfp1}
