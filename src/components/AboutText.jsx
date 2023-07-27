@@ -8,6 +8,7 @@ const AboutText = ({ text }) => {
       as="p"
       pb={4}
       textAlign="justify"
+      textAlignLast="left"
       fontSize="lg"
       fontWeight="semibold"
       lineHeight="tall"

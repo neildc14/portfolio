@@ -1,13 +1,13 @@
 import React from "react";
 import { Image, Center, Box } from "@chakra-ui/react";
-import avatar from "../assets/images/avatar.png";
+import pfp1 from "../assets/images/pfp1.png";
 
 const Avatar = () => {
   return (
     <Box>
       <Center>
         <Image
-          src={avatar}
+          src={pfp1}
           alt="profile picture"
           objectFit="contain"
           height={{ base: "200px", md: "100%" }}
@@ -15,7 +15,7 @@ const Avatar = () => {
           _hover={{
             transform: "scale(1.05)",
           }}
-          sx={{ transition: "all 0.2s ease-in-out" }}
+          sx={{ transition: "all 0.2s ease-in-out", borderRadius: "100%" }}
         />
       </Center>
     </Box>

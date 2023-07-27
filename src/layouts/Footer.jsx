@@ -15,6 +15,9 @@ const Footer = () => {
         <Text fontSize="md" fontWeight="semibold" color="white">
           Neil Edward Dela Cruz ◉ 2023
         </Text>
+        <Text fontSize="md" fontWeight="semibold" color="white">
+          Built using React-Vite
+        </Text>
       </Box>
     </Box>
   );
