@@ -8,6 +8,7 @@ import isquizzy from "../assets/images/isquizzy.png";
 import recifree from "../assets/images/recifree1.png";
 import mailbutler from "../assets/images/mailbutler1.png";
 import inventory from "../assets/images/inventory.png";
+import webarms from "../assets/images/webarms.png";
 
 import ProjectCard from "../components/ProjectCard";
 
@@ -22,6 +23,26 @@ const Projects = () => {
         flexDirection="column"
         gap={{ base: 8, md: 10 }}
       >
+        <div
+          data-aos="fade-up"
+          data-aos-duration={500}
+          data-aos-anchor-placement="top-bottom"
+        >
+          <ProjectCard
+            image={webarms}
+            heading="Ambulance_Requesting_And_Monitoring_System"
+            explanation="Our capstone project digitizes ambulance requests and integrates ambulance monitoring using websockets and the geolocation API."
+            tools={[
+              "MERN Stack",
+              "REST API",
+              "Chakra UI",
+              "Socket.io",
+              "Leaflet Map Library",
+            ]}
+            link="https://staging-capstone.netlify.app/"
+            github="https://github.com/neildc14/capstone"
+          />
+        </div>
         <div
           data-aos="fade-up"
           data-aos-duration={500}
@@ -89,20 +110,6 @@ const Projects = () => {
             ]}
             link="https://recifree.netlify.app/"
             github="https://github.com/neildc14/recifree"
-          />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration={500}
-          data-aos-anchor-placement="top-bottom"
-        >
-          <ProjectCard
-            image={mailbutler}
-            heading="Mailbutler"
-            explanation="It is a Figma design for mailing website converted to static website"
-            tools={["React", "Chakra UI", "react-router-dom"]}
-            link="https://mailbutler.netlify.app/"
-            github="https://github.com/neildc14/mailbutler"
           />
         </div>
       </Box>
